@@ -169,6 +169,11 @@ int main() {
         }
 
     }
+
+    if (libOne)
+        dlclose(libOne);
+    if (libTwo)
+        dlclose(libTwo);
     
     return 0;
 }
